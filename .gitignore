@@ -47,8 +47,8 @@ __pycache__/
 *.pyc
 
 # Ignore Python virtual environment
-venv/
-env/
+.venv/
+.env/
 
 # React project
 # Ignore Node.js dependencies
