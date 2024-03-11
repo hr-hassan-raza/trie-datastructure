@@ -1,0 +1,62 @@
+# .NET project
+# Ignore Visual Studio files
+.vscode/
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.tmp
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet package directories
+packages/
+*.nupkg
+*.paket/
+*.paket.restore
+
+# Ignore user-specific files
+*.user
+*.suo
+*.cache
+*.tmp
+
+# Ignore build output and logs
+[Dd]ebug/
+[Rr]elease/
+logs/
+*.log
+*.swp
+
+# Ignore .NET Core artifacts
+**/bin
+**/obj
+
+# Ignore .NET Core tools
+.projecttools/
+bin/
+obj/
+
+# FastAPI (Python) project
+# Ignore Python byte-code files
+__pycache__/
+*.pyc
+
+# Ignore Python virtual environment
+venv/
+env/
+
+# React project
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore build output
+build/
+dist/
+
+# Ignore React development server logs
+*.log
