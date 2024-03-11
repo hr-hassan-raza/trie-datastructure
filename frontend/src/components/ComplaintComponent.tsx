@@ -10,7 +10,7 @@ export const ComplaintComponent: React.FC = () => {
   const toast = useToast();
 
   useEffect(() => {
-    fetch(`${AppConfig.baseUrl}/complaint`)
+    fetch(`${AppConfig.baseUrl}/complaints`)
       .then((response) => response.json())
       .then((data) => setComplaints(data));
   }, [complaints]);
@@ -38,7 +38,7 @@ export const ComplaintComponent: React.FC = () => {
       }
       toast({
         title: "Complaint resolved",
-        status: "error",
+        status: "success",
         duration: 3000,
         isClosable: true,
       });
