@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  dot-net-service:
+    build:
+      context: ./dot-net-service
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    networks:
+      - this-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - dot-net-service
+      - python-service
+    networks:
+      - this-network
+
+  python-service:
+    build:
+      context: ./python-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - dot-net-service
+    networks:
+      - this-network
+
+networks:
+  this-network:
+    driver: bridge
