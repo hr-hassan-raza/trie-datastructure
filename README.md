@@ -18,7 +18,6 @@ The application is example implementation of Trie data structure in microservice
 
 #### How to Run 
 
-
 1. docker-compose build
 
 2. docker-compose up
@@ -36,20 +35,34 @@ Body:
   "Password": "user",
   "Role": "Admin"
 }
+```
 
 4. Add Products 
 
+```
 POST: http://localhost:4000/products
 
 {
     Name: "mouse"
 }
 
-Start app at http://localhost:3000
-
-
-
 ```
 
+5. Start app at http://localhost:3000
+
+
+### Data Base Schema
+
+![alt text](<Screenshot 2024-03-12 at 4.49.58 AM.png>)
+
 ##### Snap Shots
+
+![alt text](<Screenshot 2024-03-12 at 4.27.10 AM.png>)
+
+![alt text](<Screenshot 2024-03-12 at 4.33.03 AM.png>)
+
+![alt text](<Screenshot 2024-03-12 at 4.36.58 AM.png>)
+
+
+
 
