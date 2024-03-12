@@ -53,16 +53,14 @@ POST: http://localhost:4000/products
 
 ### Data Base Schema
 
-![alt text](<Screenshot 2024-03-12 at 4.49.58 AM.png>)
+![alt text](assets/DbSchema.png)
 
 ##### Snap Shots
 
-![alt text](<Screenshot 2024-03-12 at 4.27.10 AM.png>)
-
-![alt text](<Screenshot 2024-03-12 at 4.33.03 AM.png>)
-
-![alt text](<Screenshot 2024-03-12 at 4.36.58 AM.png>)
+![alt text](assets/login.png)
 
 
+![alt text](assets/complaintForm.png)
 
 
+![alt text](assets/complaints.png)
