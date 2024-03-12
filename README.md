@@ -1,6 +1,6 @@
 ## ComplainCo
 
-ComplainCo is a basic complaint management system for a fictitious company. his system should allow users to submit complaints and view their status.
+ComplainCo is a basic complaint management system for a fictitious company. This system should allow users to submit complaints and view their status.
 
 The application is example implementation of Trie data structure in microservices environment. 
 
