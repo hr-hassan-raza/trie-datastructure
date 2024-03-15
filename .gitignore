@@ -24,6 +24,7 @@ packages/
 *.suo
 *.cache
 *.tmp
+.mono/
 
 # Ignore build output and logs
 [Dd]ebug/
