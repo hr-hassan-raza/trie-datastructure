@@ -1,2 +1,3 @@
-from .user_controller import router as user_router
-from .product_controller import router as product_route
+from .user_controller import router 
+from .product_controller import router 
+from .complaint_controller import router

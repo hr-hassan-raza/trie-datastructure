@@ -1,7 +1,7 @@
 // ComplaintTable.tsx
 import React from "react";
 import { Table, Thead, Tbody, Tr, Th, Td, Button } from "@chakra-ui/react";
-import { ComplaintTableProps } from "../types/Interfaces";
+import { ComplaintTableProps } from "../types/interfaces";
 
 const ComplaintTable: React.FC<ComplaintTableProps> = ({
   complaints,

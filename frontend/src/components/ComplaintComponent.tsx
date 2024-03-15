@@ -1,7 +1,7 @@
 // App.tsx
 import React, { useEffect, useState } from "react";
 import ComplaintTable from "../pages/ComplaintTable";
-import { Complaint } from "../types/Interfaces";
+import { Complaint } from "../types/interfaces";
 import { useToast } from "@chakra-ui/react";
 import { AppConfig } from "../AppConfig";
 

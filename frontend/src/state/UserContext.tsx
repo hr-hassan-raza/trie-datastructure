@@ -1,6 +1,5 @@
 import React, { createContext, useState, useContext, ReactNode } from "react";
 
-// Define the shape of your user object
 interface User {
   id: string;
   name: string;
@@ -8,14 +7,12 @@ interface User {
   role: string;
 }
 
-// Define the shape of the context value
 interface UserContextType {
   user: User | null;
   loginUser: (userData: User) => void;
   logoutUser: () => void;
 }
 
-// Create a context with initial value null
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
 // Create a custom hook to access the user context
