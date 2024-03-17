@@ -30,11 +30,18 @@ public class ProductsController : ControllerBase
         return Ok(product);
     }
 
-    [HttpPost]
+    [HttpPut]
     public IActionResult Create(Product model)
     {
         _productService.Create(model);
         return Ok(new { message = "Product created" });
+    }
+
+    [HttpPost]
+    public IActionResult CreateMany(List<Product> models)
+    {
+        _productService.CreateMany(models);
+        return Ok(new { message = "Products created" });
     }
 
     [HttpDelete("{id}")]

@@ -9,6 +9,7 @@ public interface IProductService
     IEnumerable<Product> GetAll();
     Product GetById(int id);
     void Create(Product model);
+    void CreateMany(List<Product> models);
     void Delete(int id);
     Product GetProductByName(string name);
 }
@@ -32,6 +33,17 @@ public class ProductService(
     {
         var product = model;
         _context.Products.Add(product);
+        _context.SaveChanges();
+    }
+
+    public void CreateMany(List<Product> models)
+    {
+        foreach (var model in models)
+        {
+            var product = model;
+            _context.Products.Add(product);
+        }
+
         _context.SaveChanges();
     }
 
