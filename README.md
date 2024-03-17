@@ -30,10 +30,17 @@ POST: http://localhost:4000/users
 Body: 
 
 {
+  "Name": "admin",
+  "Email": "admin@gmail.com",
+  "Password": "user",
+  "Role": "Admin"
+}
+
+{
   "Name": "user",
   "Email": "user@gmail.com",
   "Password": "user",
-  "Role": "Admin"
+  "Role": "User"
 }
 ```
 
@@ -42,9 +49,26 @@ Body:
 ```
 POST: http://localhost:4000/products
 
-{
-    Name: "mouse"
-}
+[
+  {
+    "name": "mouse"
+  },
+  {
+    "name": "mobile"
+  },
+  {
+    "name": "moneypot"
+  }, 
+  {
+    "name": "monitor"
+  },
+  {
+    "name": "mousepod"
+  },
+  {
+    "name": "havana"
+  },
+]
 
 ```
 
