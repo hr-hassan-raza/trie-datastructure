@@ -1,6 +1,6 @@
 import requests
 
-BaseUrl = "http://dot-net-service:4000"
+BaseUrl = "http://dotnet-service:4000"
 headers = {
     "Content-Type": "application/json"
 }

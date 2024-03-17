@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  dot-net-service:
+  dotnet-service:
     build:
-      context: ./dot-net-service
+      context: ./dotnet-service
       dockerfile: Dockerfile
     ports:
       - "4000:4000"
@@ -17,7 +17,7 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - dot-net-service
+      - dotnet-service
       - python-service
     networks:
       - this-network
@@ -29,7 +29,7 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - dot-net-service
+      - dotnet-service
     networks:
       - this-network
 

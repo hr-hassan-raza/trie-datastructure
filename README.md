@@ -11,9 +11,9 @@ The application is example implementation of Trie data structure in microservice
 
 ### Services
 
-- Frontend - React App
-- python-service - FASTAPI service
-- Dotnet-service - SQLlite DB connection service
+- frontend - React web app
+- python-service - FastApi service
+- dotnet-service - SQ:lite DB connection service
 
 
 ### How to Run 
